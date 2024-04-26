@@ -1,0 +1,15 @@
+https://validator.w3.org/nu/
+To validate HTML
+
+https://jigsaw.w3.org/css-validator/
+To validate CSS
+
+https://validator.w3.org/checklink
+To validate links
+
+web developer tools
+https://chromewebstore.google.com/search/web-developer
+
+https://htmlreference.io/
+all your HTML needs.
+
