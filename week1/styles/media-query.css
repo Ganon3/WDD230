@@ -1,0 +1,22 @@
+body {
+    font-family: 'roboto';
+}
+
+header, main, footer {
+    width: 640px;
+    margin: 1rem auto;
+    border: 15px solid rgb(201, 250, 234);
+    padding: 25px;
+    background-color: rgba(191, 253, 253, 0.636);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 20px;
+    background-color: rgb(254, 243, 255);
+}
