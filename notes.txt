@@ -7,9 +7,15 @@ To validate CSS
 https://validator.w3.org/checklink
 To validate links
 
-web developer tools
 https://chromewebstore.google.com/search/web-developer
+web developer tools
 
 https://htmlreference.io/
-all your HTML needs.
+all your HTML needs
 
+https://codepen.io/pen
+https://codepen.io/Ganon3/pen/OJGqrmX
+to help wright code
+
+https://byui-cse.github.io/wdd230-ww-course/week01/prepare-media-queries.html
+@media screen and (min-with: 0px)
