@@ -7,6 +7,9 @@ To validate CSS
 https://validator.w3.org/checklink
 To validate links
 
+https://pixlr.com/
+To fix pictures
+
 https://chromewebstore.google.com/search/web-developer
 web developer tools
 
