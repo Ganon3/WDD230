@@ -1,0 +1,16 @@
+@media  screen and (max-width: 600px) {
+    
+    #headerlinks {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 5px;
+    }
+    main h2 {
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,42 @@
+<img src="https://picsum.photos/320/240"> 
+this is for randome pictures
+
+validate / bug cuntrol html
+https://validator.w3.org
+
+validate / bug cuntrol css
+https://jigsaw.w3.org/css-validator
+
+this is for reLearning things like <div> or <article>
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+this is for optimasing seeing your web quality - Next is good img resizer
+https://pagespeed.web.dev/
+https://picresize.com/
+
+layout help and centering ellemnts -W3Schools
+https://www.w3schools.com/css/css_align.asp
+
+This is for wireframe exampls - next to creat wireframes
+https://www.flickr.com/search/?text=wireframes
+https://gomockingbird.com/ or wireframe.cc
+
+for docs, forms, cliants, and other backend work stuff
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+
+try not to foget 
+opacity: 1; to opacity: 0; from not seethrouh to completly seethrough
+all of its child elements inherit the same transparency
+
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+
+If I wanted to include the padding and border amounts in the total width of the element
+box-sizing: border-box
+
+for grid stuff
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+justify aligns horizontal by default, align takes care of the other direction (vertical alignment by default). If we want to align the grid container, we use the content suffix. If we want to align the contents of the grid items within the grid cells, then we use items. example justify-content.
