@@ -22,3 +22,6 @@ to help wright code
 
 https://byui-cse.github.io/wdd230-ww-course/week01/prepare-media-queries.html
 @media screen and (min-with: 0px)
+
+https://coolors.co/
+this is to get a cooler skeam from an img
