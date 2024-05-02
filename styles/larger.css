@@ -1,9 +1,10 @@
-@media  screen and (max-width: 600px) {
+@media  screen and (min-width: 600px) {
     
     #headerlinks {
         display: flex;
         list-style: none;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
     }
     main {
         display: grid;
