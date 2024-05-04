@@ -25,6 +25,7 @@ li::marker {
 body { font-family: "Quicksand", sans-serif; }
 
 header {
+    position: relative;
     display: grid;
     grid-template-columns: auto 1fr; 
     text-align:center;
@@ -58,6 +59,11 @@ nav li:hover {
     background-color: rgb(255, 241, 220);
 }
 
+section li:hover {
+    border: 2px solid black;
+    background-color: rgb(255, 241, 220);
+}
+
 /*This is hamberger menue*/
 
 #headerlinks li {
@@ -80,5 +86,5 @@ nav li:hover {
 .link.men {
     display: block !important;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: hsl(36, 100%, 90%);
 }
