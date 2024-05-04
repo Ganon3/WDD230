@@ -54,8 +54,8 @@ nav li:hover {
 
 /*This is hamberger menue*/
 
-.link {
-    
+#headerlinks li {
+    display: none;
 }
 #button1{
     font-size: 1.7em;
