@@ -14,10 +14,12 @@ section {border: solid red;}
 #content1 {
     margin: 5px;
     background-color: rgb(239, 239, 239);
-    
 }
 li::marker {
     content: "";
+}
+.active::before {
+    content: "+";
 }
 
 body { font-family: "Quicksand", sans-serif; }
@@ -29,12 +31,7 @@ header {
     align-items: center;
 }
 header span p {
-    text-size-adjust: 32px;
-}
-
-#headerlinks {
-    background-color: blanchedalmond;
-    text-align: center;
+    font-size: 2em;
 }
 
 main h2 {
@@ -50,25 +47,32 @@ section h2 {
     background-color: rgb(249, 177, 89);
 }
 
-/*
-#headerlinks {
-    display: flex;
-    justify-content: space-between;
-}
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 5px;
-}
-main h2 {
-    grid-column: 1/3;
-}
-*/
-
 nav li:hover {
     border: 2px solid black;
+    background-color: rgb(255, 241, 220);
 }
 
-ul.no-bullets {
-    list-style-type: none; /* Remove bullets */
+/*This is hamberger menue*/
+
+.link {
+    
+}
+#button1{
+    font-size: 1.7em;
+    margin: 0 auto;
+    padding-left: 48%;
+    padding-right: 48%;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    
+}
+#linknav:hover {
+    border: 2px solid black;
+    background-color: rgb(249, 177, 89);
+}
+
+.link.men {
+    display: block !important;
+    text-align: center;
+    background-color: blanchedalmond;
 }

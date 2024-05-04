@@ -4,7 +4,9 @@
         display: flex;
         list-style: none;
         justify-content: space-evenly;
-
+        background-color: blanchedalmond;
+        text-align: center;
+        border: 2px solid black;
     }
     main {
         display: grid;

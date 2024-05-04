@@ -15,19 +15,20 @@
     <title>Fuad J Torres - WDD 230 - Web Font Development</title>
 </head>
 <body>
-    <nav id="content1">
+    <div id="content1">
 
     <header>
         <img src="images/WDD230_me.jpg" alt="a picture of the author">
         <span><p>Fuad J Torres</p></span>
     </header>
 
-    <nav>
+    <nav id="linknav">
      <ul id="headerlinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="#">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
+        <button id="button1"> ≡ </button>
+        <li class="link"><a class="active" href="#">Home</a></li>
+        <li class="link"><a href="#">Chamber</a></li>
+        <li class="link"><a href="#">Site Plan</a></li>
+        <li class="link"><a href="#">Form</a></li>
      </ul>
     </nav>
 
@@ -55,7 +56,7 @@
         <p>&copy; <span id="year">nan</span> - Fuad J Torres: Hitchock TX USA</p>
         <p id="lastModified">nan</p>
     </footer>
-    </nav>
+</div>
 
     <script src="scripts/getDates.js"></script>
 
