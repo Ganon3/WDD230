@@ -1,7 +1,6 @@
 document.getElementById("year").innerHTML = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = `This was last modifide: ${new Date(document.lastModified)}`;
 
-
 const button = document.getElementById("button1")
 const links = document.querySelectorAll(".link")
 
