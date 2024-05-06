@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta property="og:title" content="Chamber sight home page">
     <meta property="og:type" content="websight">
-    <meta property="og:url" content="https://ganon3.github.io/WDD230/">
+    <meta property="og:url" content="https://ganon3.github.io/WDD230/chamber">
     <meta property="og:image" content="images/faviamge.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="styles/base.css">
@@ -20,10 +20,19 @@
     <header>
         <div> <!-- I do not think i need a div here but ill find out in the css a-->
             <img src="images/hero.png" alt="The Chamber of commers logo">
-            <h2>The American Dream</h2>
+            <h1>The American Dream</h2>
+                
+                <div id="buttons"> <!-- Its is posible this might be my hamberger but it also may not be -->
+                    <button><img src="images/dark-them-4444.png" alt="dark mode light mode"></button>
+                    <button>Font style change</button>
+                    <button>Collor setings</button>
+                    <button>News setings</button>
+                    <button>calinder setings</button>
+                </div>
+
             <!-- <button> ≡ </button> -->
-            <nav>
-                <li><a href="#">Home</a></li>
+            <nav id="navigation">
+                <li><a id="active" href="#">Home</a></li>
                 <li><a href="#">Call To Action</a></li>
                 <li><a href="#">Galveston Geography</a></li>
                 <li><a href="#">Economic Charts</a></li>
@@ -32,6 +41,7 @@
             </nav>
         </div>
     </header>
+    <button id="setings">≡</button>
 
     <main> <!--why us button is defalt-->
         <h1>Galveston Chamber Of Commers</h1>
@@ -46,9 +56,6 @@
         <p id="lastModified">nan</p>
     </footer>
     </div>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-        document.getElementById("lastModified").innerHTML = `This was last modifide: ${new Date(document.lastModified)}`;
-    </script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>
