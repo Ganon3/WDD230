@@ -8,6 +8,7 @@ https://validator.w3.org/checklink
 To validate links
 
 https://pixlr.com/
+https://cloudconvert.com/jpg-to-webp
 To fix pictures
 
 https://chromewebstore.google.com/search/web-developer
@@ -18,10 +19,13 @@ all your HTML needs
 
 https://codepen.io/pen
 https://codepen.io/Ganon3/pen/OJGqrmX
-to help wright code
+to help write code
 
 https://byui-cse.github.io/wdd230-ww-course/week01/prepare-media-queries.html
-@media screen and (min-with: 0px)
+@media screen and (min-width: 0px)
 
 https://coolors.co/
-this is to get a cooler skeam from an img
+this is to get a cooler scheme from an img
+
+https://www.youtube.com/watch?v=Zx0CacsiDZ4
+video on image file types (no BMP)

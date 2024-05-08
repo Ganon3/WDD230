@@ -1,0 +1,20 @@
+h1, p {text-align: center;}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 800px;
+}
+
+img {
+    width: 100%;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0%     {opacity: 0;}
+    100%   {opacity: 1;}
+}
