@@ -41,6 +41,13 @@ header span p {
     right: 10px;
 }
 
+#hero picture img {
+    height: auto;
+    width: 100%;
+    border: 3px solid black;
+    background-color: blanchedalmond;
+}
+
 main h2 {
     text-align: center;
 }
@@ -69,15 +76,15 @@ section li:hover {
 #headerlinks li {
     display: none;
 }
+
 #button1{
     font-size: 1.7em;
-    margin: 0 auto;
-    padding-left: 48%;
-    padding-right: 48%;
     background-color: blanchedalmond;
-    border: 2px solid black;
-    
+    text-align: center; 
+    border: 1.5px solid black;
+    cursor:pointer; 
 }
+
 #linknav:hover {
     border: 2px solid black;
     background-color: rgb(249, 177, 89);
@@ -86,5 +93,11 @@ section li:hover {
 .link.men {
     display: block !important;
     text-align: center;
+    padding: 3px 0;
     background-color: hsl(36, 100%, 90%);
+    border: 1.5px solid black;
+}
+.link.men:hover {
+    font-size: large;
+    font-weight: bold;
 }

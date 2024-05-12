@@ -12,5 +12,5 @@ button.addEventListener("click", () => {
     else {button.textContent = "X";}
 
     links.forEach((i) => {i.classList.toggle('men');});
-    
+    button.classList.toggle('men');
 })
