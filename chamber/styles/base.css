@@ -114,6 +114,7 @@ footer {
 /*-------------------------------------------------------*/
 
 /* home main section*/
+
 #homeMain         {margin: 20px;}
 #homeMain h1      {text-align: center;}
 #homeMain section {text-align: center;
@@ -149,9 +150,6 @@ footer {
 #sideBar {
     display: grid;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-
     justify-items: center;
     align-items: center;
     
@@ -172,7 +170,7 @@ footer {
 #find img {
     float: left;
     object-fit: cover;
-    padding: 10px;
+    padding: 4px;
     
     border: 5px solid #4f2f35;
     background-color: #11111d;

@@ -29,12 +29,12 @@
     }
 
     /*This is the button's effects : TOGGLE  ---  Hamberger*/      
-    /*                                              .seting*/
-    #navigation.seting {grid-column: 3/5;} 
+   
+    #navigation.seting {grid-column: 3/5;}        /*.seting*/
     #setings.seting {
         font-size: 4em;
-        bottom: 20rem;    /*button's positioning*/
-        left: 19rem;      /*button's positioning*/
+        bottom: 20rem;     /*button's positioning*/
+        left: 19rem;       /*button's positioning*/
     }
 
     /*---------above is the all that is in the header--------*/
@@ -57,9 +57,9 @@
     }
     #sideBar img {
         width: 100%;
-        height: auto;
         border: solid #11111d;
         filter: blur(1px);
+        margin: 0;
     }
     #sideBar img:hover {
         filter: blur(0);
@@ -73,6 +73,8 @@
     #find img { 
         width: 100%;
         height: auto;
+        border: none;
+        background-color: none;
     }
     #upComing {
         grid-column: 1/2;
