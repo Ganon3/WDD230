@@ -1,39 +1,81 @@
 @media screen and (min-width: 900px) {
     
-    #content {max-width: 1250px;}
+    #content  {max-width: 1250px;}
+    p         {font-size: 2rem;}
+    h1        {font-size: 4rem;}
 
-    p {font-size: 2rem;}
-    h1 {font-size: 4rem;}
+    /* ---------above is genral css--------- */
+    /* ------------------------------------- */
 
-    header div {
-        display: grid;
-        grid-template-columns: auto 20% 1fr 1fr;
-    }
-    header div img {grid-column: 1/3;}
-    header div h1 {grid-column: 3/5;}
-    #buttons {grid-column: 1/3; font-size: 2rem;}
-    #navigation {grid-column: 1/5; font-size: 2rem;}
-
-    #setings {
-        padding: 0 10px;
-        font-size: 2.5em;
-        position: relative;
-        bottom: 17rem;
-        left: 2rem;
+    header div           {display: grid;}  
+    header div           {grid-template-columns: auto 20% 1fr 1fr;}
     
+    header div img       {grid-column: 1/3;}       /*large grid area*/
+    header div h1        {grid-column: 3/5;}       /*large grid area*/
+
+    #buttons             {grid-column: 1/3; font-size: 2rem;}  /*this is the list of buttons*/
+    #navigation          {grid-column: 1/5; font-size: 2rem;}  /*this is the nav links*/
+
+   /* ---------above is grid area change --------- */
+   /* -------------------------------------------- */
+
+    #setings {             /*button's positioning*/
+               
+        padding: 0 10px;      bottom: 20rem;
+        font-size: 4em;       left: 2rem;
+       
         background-color: #11111df9;
         color: #f7e6df;
     }
 
-    /* hamberger*/
-
-    #navigation.seting {
-        grid-column: 3/5;
+    /*This is the button's effects : TOGGLE  ---  Hamberger*/      
+    /*                                              .seting*/
+    #navigation.seting {grid-column: 3/5;} 
+    #setings.seting {
+        font-size: 4em;
+        bottom: 20rem;    /*button's positioning*/
+        left: 19rem;      /*button's positioning*/
     }
 
-    #setings.seting {
-        bottom: 27rem;
-        left: 19rem;
-        font-size: 4em;
+    /*---------above is the all that is in the header--------*/
+    /*-------------------------------------------------------*/
+
+
+    #discoverMain { 
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    #greating {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #sideBar {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    #sideBar img {
+        width: 100%;
+        height: auto;
+        border: solid #11111d;
+        filter: blur(1px);
+    }
+    #sideBar img:hover {
+        filter: blur(0);
+        border: #8b1d19;
+    }
+
+    #find {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #find img { 
+        width: 100%;
+        height: auto;
+    }
+    #upComing {
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 }
