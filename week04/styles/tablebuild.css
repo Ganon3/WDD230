@@ -1,0 +1,21 @@
+table, table tr, table tr th, table tr td {
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 5px; 
+    text-align: center;
+}
+table {
+    border: 2px solid black; 
+    background-color:rgb(67, 33, 101);}
+table thead {background-color: aquamarine;}
+
+table tbody {
+    background-color: beige;
+}
+table tbody tr td:nth-child(1) {background-color: aquamarine !important;}
+table tbody tr:nth-child(1) {background-color: #f5c5c5;} /*there are better ways to all of this but i was experemnting*/
+table tbody tr:nth-child(3) {background-color:#cacab9;}
+table caption {
+    position: relative;
+    bottom: -350px;
+}
