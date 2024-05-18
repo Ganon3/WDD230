@@ -11,7 +11,7 @@
     #headerlinks li {
         display: block;
     }
-    main {
+    #indexMain {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: 5px;

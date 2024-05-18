@@ -1,7 +1,12 @@
+#formMain {    
+    font-size: 1.5rem; 
+    border: 5px solid #4f2f35;
+
+    /*background: linear-gradient(#d0af88, #8b1d19);*/
+}
 form {
-    margin: 0 auto;
-    font-size: 1.5rem;
-    background: linear-gradient(red, green);
+    border: 5px solid #4f2f35;
+    width: 100%;
 }
 label {
     display: block;
@@ -10,3 +15,4 @@ label {
 input {
     display: block;
 }
+

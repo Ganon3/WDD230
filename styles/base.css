@@ -49,7 +49,7 @@ header span p {
     background-color: blanchedalmond;
 }
 
-main h2 {
+#indexMain h2 {
     text-align: center;
 }
 
@@ -104,3 +104,61 @@ section li:hover {
 }
 
 #button1.men:hover {font-weight: bold;}
+
+/* ------------- FORM PAGE --------------*/
+/*---------------------------------------*/
+
+#formMain {    
+    font-size: 1.5rem; 
+    border: 5px solid #4f2f35;
+    /*background: linear-gradient(#d0af88, #8b1d19);*/
+}
+form {
+   color: #4f2f35;
+   
+}
+label {
+    display: block;
+    padding: .9rem;
+    
+}
+input {
+    display: block;
+    border: solid #11111d;
+    width: 100%;
+    max-width: 400px;
+}
+
+#rating input {
+    display: block;
+    width: 80%;
+    max-width: 320px;
+    
+}
+#rating input::after {
+    content: "5";
+    position: relative;
+    right: -80px;
+    font-size: 40px;
+}
+
+input:required {
+    border-right: 8px solid red;
+}
+input:required:valid {
+    border-right: 8px solid green;
+}
+input[type="submit"] {
+    padding: 4px;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    background-color: blanchedalmond;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="submit"]:hover,
+input[type="password"]:hover {
+    box-shadow: 1px 1px 1px 1px darkgoldenrod;
+}
+
