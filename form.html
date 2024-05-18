@@ -26,27 +26,27 @@
     </header>
 
     <nav id="linknav">
-     <ul id="headerlinks">
-        <div id="button1"><button > ≡ </button></div>
-        <li class="link"><a class="active" href="https://ganon3.github.io/WDD230/">Home</a></li>
-        <li class="link"><a href="https://ganon3.github.io/WDD230/chamber">Chamber</a></li>
-        <li class="link"><a href="#">Site Plan</a></li>
-        <li class="link"><a href="#">Form</a></li>
-     </ul>
+        <ul id="headerlinks">
+            <div id="button1"><button > ≡ </button></div>
+            <li class="link"><a class="active" href="https://ganon3.github.io/WDD230/">Home</a></li>
+            <li class="link"><a href="https://ganon3.github.io/WDD230/chamber">Chamber</a></li>
+            <li class="link"><a href="https://ganon3.github.io/WDD230/week01/chamber-sight-plan/Galveston's-chamber-sightPlan.html">Site Plan</a></li>
+            <li class="link"><a href="https://ganon3.github.io/WDD230/form.html">Form</a></li>
+         </ul>
     </nav>
 
-    <main>
+    <main id="formMain">
         <form method="get" action="thanks.html">
 
             <fieldset>
                 <label id="Username"> Username* <input type="text" name="name" required> </label>
                 <label id="email"> Email* <input type="email" name="email" placeholder="user@email.com" required ></label>
-                <label id="Password"> Password* <input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain a minamum of one number, one uppercase and lowercase letter, and at be 8+ characters"> </label>
-                <label id="PasswordV"> Password Validation* <input type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain a minamum of one number, one uppercase and lowercase letter, and at be 8+ characters"> </label>
+                <label id="password"> Password* <input id="p" type="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain a minamum of one number, one uppercase and lowercase letter, and at be 8+ characters"> </label>
+                <label id="passwordV"> Password Validation* <input id="pv" type="password" name="password" required placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain a minamum of one number, one uppercase and lowercase letter, and at be 8+ characters"> </label>
             </fieldset>
 
             <fieldset>
-                <label id="rating"> Page Rating <input type="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                <label id="rating"> Page Rating <input id="rr" type="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
                     <datalist id="rangevalues">
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -60,9 +60,10 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </datalist>
+                    <p id="r">0</p>
                 </label>
             
-                <input type="submit" value="Shaire Rating">
+                <input type="submit" value="SignUp and Post Rating">
             </fieldset>
         </form>
     </main>
