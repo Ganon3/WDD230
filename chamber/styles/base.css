@@ -113,7 +113,7 @@ footer {
 /*---------above is the all that is in the footer--------*/
 /*-------------------------------------------------------*/
 
-/* home main section*/
+/* -- home main section ---------------------------------------------*/
 
 #homeMain         {margin: 20px;}
 #homeMain h1      {text-align: center;}
@@ -178,5 +178,83 @@ footer {
 }
 
 /* -- join section main ------------------------------------------ */
+
+#formMain {    
+    font-size: 1.5rem; 
+    border: 5px solid #4f2f35;
+    /*background: linear-gradient(#d0af88, #8b1d19);*/
+}
+form {
+   color: #4f2f35;
+   
+}
+label {
+    display: block;
+    padding: .9rem;
+    
+}
+input {
+    display: block;
+    border: solid #11111d;
+    width: 100%;
+    max-width: 400px;
+}
+
+#rating input {
+    display: block;
+    width: 80%;
+    max-width: 320px;
+    
+}
+#rating p {
+    position: relative;
+    right: -370px;
+    top: -50px;
+    font-size: 40px;
+}
+
+input:required {
+    border-right: 8px solid red;
+}
+input:required:valid {
+    border-right: 8px solid green;
+}
+input[type="submit"] {
+    padding: 4px;
+    width: 96%;
+    max-width: 400px;
+    margin: -2rem 2% 2rem 2%;
+    background-color: blanchedalmond;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="submit"]:hover,
+input[type="password"]:hover {
+    box-shadow: 1px 1px 1px 1px darkgoldenrod;
+}
+
+
+
+
+
+
+/* -- table area --*/
+table, table tr, table tr th, table tr td {
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 5px; 
+    text-align: center;
+}
+table {
+    border: 2px solid black; 
+    background-color:rgb(67, 33, 101);}
+table thead {background-color: aquamarine;}
+
+table tbody {
+    background-color: beige;
+}
+table tbody tr td:nth-child(1) {background-color: aquamarine !important;}
+table tbody tr:nth-child(1) {background-color: #f5c5c5;} /*there are better ways to all of this but i was experemnting*/
+table tbody tr:nth-child(3) {background-color:#cacab9;}
 
 
