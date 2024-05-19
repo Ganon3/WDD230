@@ -124,28 +124,21 @@ footer {
 }
 #homeMain section p {margin: 20px;}
 
-/*Discover main section*/
+/*-- Discover main section --------------------------------------------*/
 
 #discoverMain { 
     display: grid;
     grid-template-columns: 1fr;
+
     border: solid #11111d;
-}
-#discoverMain p {
-    padding: 20px 0;
     text-align: center;
 }
-#discoverMain h1 {
-    text-align: center;
+#discoverMain p  {padding: 20px 0;}
+#discoverMain h1 { margin: 0;
+    
     background-color:#b2957e;
-
-
-    margin: 0;
 }
-
-#greating {
-    border: solid #11111d;
-}
+#greating {border: solid #11111d;}
 
 #sideBar {
     display: grid;
@@ -183,5 +176,7 @@ footer {
 #upComing {
     border: solid #11111d;
 }
+
+/* -- join section main ------------------------------------------ */
 
 
