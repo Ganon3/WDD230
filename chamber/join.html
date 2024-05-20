@@ -44,8 +44,7 @@
     </header>
     
 
-    <main id="joinMane">
-        <h1>Course Proposal Application</h1>
+    <main id="formMain">
         <form method="get" action="thanks.html" class="wf1">
     
         <fieldset>
@@ -54,13 +53,15 @@
             <label> Last Name* <input id="lname" type="text" name="lname" required> </label>
             <label> Title or Position <input id="title" type="text" name="title" pattern="[A-Z-]{7,0}"> </label>
             <label> Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" required> </label>
-            <label> Phone <input id="phone" type="tel" name="phone" placeholder="123-555-1234"> </label>
+            <label> Phone* <input id="phone" type="tel" name="phone" placeholder="123-555-1234" required> </label>
         </fieldset>
-      
+        <fieldset>
+            <legend> Membership </legend>
+
             <table>
-                <caption> Our membership features and plans</caption>
+                <caption> Our Membership Features and Plans</caption>
                 <thead>
-                    <tr><th colspan="4"> Membership Plan grid </th></tr>  
+                    <tr><th colspan="5"> Membership Plan grid </th></tr>  
                 </thead>
                 <tbody>
                     <tr><td></td><th>Non-profit</th><th>Bronze</th><th>silver</th><th>Gold</th></tr>
@@ -71,21 +72,22 @@
                 </tbody>
             </table>
 
-        <fieldset>
-            <legend> Membership </legend>
-            <label> <input type="radio" name="membership" value="beginner"> NP Membership (free) </label>
-            <label> <input type="radio" name="membership" value="intermediate"> Bronze Membership (76$ M) </label>
-            <label> <input type="radio" name="membership" value="advanced"> Silver Membership (122$ M) </label>
-            <label> <input type="radio" name="membership" value="advanced"> Gold Membership (187$ M) </label>
+            <div id="radioDiv">
+            <label>NP (free) <input type="radio" name="membership" value="beginner">  </label>
+            <label>Bronze (76$ M) <input type="radio" name="membership" value="intermediate">  </label>
+            <label>Silver (122$ M)  <input type="radio" name="membership" value="advanced"> </label>
+            <label>Gold (187$ M) <input type="radio" name="membership" value="advanced">  </label>
+            </div>
+
         </fieldset>
 
         <fieldset>
+            <legend>Buisness Information</legend>
             <div> Tell us about your buisness</div>
-            <label> buisness/organization's name* <input id="buisness" type="text" name="compname" required> </label>
-            <label> Buisness Description <textarea id="buisnessD" name="buisnessD" rows="3" cols="50"></textarea>
-            <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
-            <hr>
-            <input type="submit" value="Sighn Up For This Chamber">
+            <label> Buisness/organization's name* <input id="buisness" type="text" name="compname" required> </label>
+            <label> Buisness Description <textarea id="buisnessD" name="buisnessD" rows="3" cols="32"></textarea>
+            <label> Date will be Recorded <input id="datef" type="hidden" name="completionDate"></label>
+            <input type="submit" value="Subscribe">
         </fieldset>
         
         <!-- 

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+    --prime-col: #f7e6df;       /*   var(--prime-col)        */
+    --prime-sup-col:#4f2f35;    /*   var(--prime-sup-col)    */
+    --second-col: #d0af88;      /*   var(--second-col)       */
+    --second-sup-col: #b2957e;  /*   var(--second-sup-col)   */
+    --style1-col: #8b1d19;      /*   var(--style1-col)       */
+    --style2-col: #11111d;      /*   var(--style2-col)       */
+}
+
 .sacramento-regular {
     font-family: "Sacramento", cursive;
     font-weight: 400;
@@ -12,7 +21,7 @@
     font-style: italic;
 }
 
-* {background-color: #f7e6df;}
+* {background-color: var(--prime-col);}
 * {font-family: "Zilla Slab";}
 h1, h2, h3, h4 {font-family: "Sacramento";}
 * {
@@ -42,7 +51,7 @@ header div {display: grid;
             justify-content: center;
            }
 header div img {
-            border: solid #11111d;              
+            border: solid var(--style2-col);              
             height: auto;                                 /*header*/ 
             width: 100%;                                  /*header*/ 
            }
@@ -52,8 +61,8 @@ header div h1 {
             margin:inherit;
             align-content: center;
 
-    background-color: #b2957e;
-    border: 3px solid #11111d;                           /*header*/ 
+    background-color: var(--second-sup-col);
+    border: 3px solid var(--style2-col);                           /*header*/ 
 }
 
 
@@ -65,8 +74,8 @@ header div h1 {
     font-size: 1.7rem;                                   
 }
 #navigation li                      {margin: 2% 0px;}
-#navigation li:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: #f7e6df;}
-#navigation li:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: #f7e6df;}
+#navigation li:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: var(--prime-col);}
+#navigation li:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: var(--prime-col);}
 
 
 #setings {            /*#the button's position*/       /*the button or Hamberger*/
@@ -75,19 +84,19 @@ header div h1 {
     cursor: pointer;     left: 1rem;
    
     background-color: #11111df9;
-    color: #f7e6df;
+    color: var(--prime-col);
 }
-#setings:hover {background-color: #4f2f35;}          /*the button or Hamberger*/
+#setings:hover {background-color: var(--prime-sup-col);}          /*the button or Hamberger*/
 #buttons {                                             /*button list or Hamberger*/
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2px;
     
-    background-color: #8b1d19; /**/ border: solid;
+    background-color: var(--style1-col); /**/ border: solid;
 }
 #buttons button:hover {
     padding: 1px;
-    border: 4px solid #b2957e;
+    border: 4px solid var(--second-sup-col);
     cursor: pointer;
 }                                                      /*button list or Hamberger*/
 
@@ -104,10 +113,10 @@ header div h1.seting {margin-top: 0;}
 /*-------------------------------------------------------*/
 
 footer {
-    border: #11111d solid;
+    border: var(--style2-col) solid;
     border-radius: 5px;
     padding: 4px;
-    background-color: #8b1d19;
+    background-color: var(--style1-col);
 }                               
                                        
 /*---------above is the all that is in the footer--------*/
@@ -119,7 +128,7 @@ footer {
 #homeMain h1      {text-align: center;}
 #homeMain section {text-align: center;
 
-    border: #11111d solid;
+    border: var(--style2-col) solid;
     border-radius: 20px;
 }
 #homeMain section p {margin: 20px;}
@@ -130,15 +139,15 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
 
-    border: solid #11111d;
+    border: solid var(--style2-col);
     text-align: center;
 }
 #discoverMain p  {padding: 20px 0;}
 #discoverMain h1 { margin: 0;
     
-    background-color:#b2957e;
+    background-color:var(--second-sup-col);
 }
-#greating {border: solid #11111d;}
+#greating {border: solid var(--style2-col);}
 
 #sideBar {
     display: grid;
@@ -146,13 +155,13 @@ footer {
     justify-items: center;
     align-items: center;
     
-    border: solid #11111d;
-    background-color: #4f2f35;
+    border: solid var(--style2-col);
+    background-color: var(--prime-sup-col);
 }
 #sideBar img {
     width: 75%;
     height: auto;
-    border: 4px solid #11111d;
+    border: 4px solid var(--style2-col);
     margin-top: 10px;
     margin-bottom: 10px;
     animation: fade 13s;
@@ -163,48 +172,55 @@ footer {
 }
 
 #find {
-    border: solid #11111d;
+    border: solid var(--style2-col);
 }
 #find img {
     float: left;
     object-fit: cover;
     padding: 4px;
     
-    border: 5px solid #4f2f35;
-    background-color: #11111d;
+    border: 5px solid var(--prime-sup-col);
+    background-color: var(--style2-col);
 }
 #upComing {
-    border: solid #11111d;
+    border: solid var(--style2-col);
 }
 
 /* -- join section main ------------------------------------------ */
 
-#formMain {    
-    font-size: 1.5rem; 
-    border: 5px solid #4f2f35;
-    /*background: linear-gradient(#d0af88, #8b1d19);*/
+#formMain {
+    border: 10px solid var(--style2-col);
+    padding: 0px 20px;
 }
-form {
-   color: #4f2f35;
-   
+#formMain form {    
+    margin: 5px;
+    color: var(--style2-col); 
+    color: var(--prime-sup-col);
+    font-size: 40px;
 }
 label {
     display: block;
     padding: .9rem;
-    
 }
 input {
     display: block;
-    border: solid #11111d;
+    border: solid var(--style2-col);
     width: 100%;
-    max-width: 400px;
+    max-width: 750px;
 }
-
+input[type="radio"] {
+    display: inline;
+    margin-left: -30%;
+    height: 1em;
+}
 #rating input {
     display: block;
     width: 80%;
     max-width: 320px;
     
+}
+#radioDiv {
+    margin-top: 40px;
 }
 #rating p {
     position: relative;
@@ -212,6 +228,11 @@ input {
     top: -50px;
     font-size: 40px;
 }
+textarea {
+    display: block;
+    border: var(--style2-col) solid;
+}
+textarea:focus {border: 7px solid var(--style1-col);}
 
 input:required {
     border-right: 8px solid red;
@@ -223,27 +244,26 @@ input[type="submit"] {
     padding: 4px;
     width: 96%;
     max-width: 400px;
-    margin: -2rem 2% 2rem 2%;
-    background-color: blanchedalmond;
+    
+    background-color: var(--second-col);
 }
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="submit"]:hover,
-input[type="password"]:hover {
-    box-shadow: 1px 1px 1px 1px darkgoldenrod;
+input[type="password"]:hover,
+input[type="phone"]:hover,
+textarea:hover {
+    box-shadow: 1px 1px 1px 1px var(--prime-sup-col);
 }
-
-
-
-
 
 
 /* -- table area --*/
 table, table tr, table tr th, table tr td {
-    margin: 0 auto;
-    font-size: 30px;
-    padding: 5px; 
+
+    font-size: 44px;
+    padding: 4px; 
     text-align: center;
+    color: var(--style2-col);
 }
 table {
     border: 3px solid var(--style2-col); 
@@ -257,5 +277,5 @@ table tbody {
     background-color: beige;
 }
 table tbody tr td:nth-child(1) {background-color: var(--second-col) !important;}
-
+table tbody tr:nth-child(odd)  {background-color: var(--second-sup-col) !important;}
 
