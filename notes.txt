@@ -29,3 +29,6 @@ this is to get a cooler scheme from an img
 
 https://www.youtube.com/watch?v=Zx0CacsiDZ4
 video on image file types (no BMP)
+
+https://jsonlint.com/
+to validate .Json file
