@@ -1,0 +1,35 @@
+{
+    "family-name": "Bogmens",
+    "date-moved": "2/32/2054",
+    "family-members": 5 ,
+    "bishopric-visits": 12 ,
+    "members": [
+
+        {
+            "name":"Bernet", 
+            "gender":"f",
+            "birth":"1/2/1992"
+        },
+        {
+            "name":"Sentinal",
+            "gender":"m",
+            "birth":"10/27/2024"
+        },
+        {
+            "name":"Leviya",
+            "gender":"f",
+            "birth":"6/13/2023"
+        },
+        {
+            "name":"Sennia",
+            "gender":"f",
+            "birth":"12/4/2043"    
+        },
+        {
+            "name":"Lution",
+            "gender":"m",
+            "birth":"12/4/2043"
+        }
+
+    ]
+}
