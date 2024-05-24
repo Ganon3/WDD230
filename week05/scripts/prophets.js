@@ -2,10 +2,17 @@ const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophet
 const cards = document.getElementById('cards');
 
 async function getProphetData () {
-    let response = await fetch(url);
-    let data = await response.json();
-    console.log(data);
-    console.table(data);
+    const response = await fetch(url);
+    const data = await response.json();
+    // console.log(data);
+    // console.table(data.prophets);
 }
 
+// funtions for the main program
+
+
+
+
+
+// to activate the main programe
 getProphetData();
