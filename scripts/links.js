@@ -1,24 +1,31 @@
 const baseURL = "https://ganon3.github.io/WDD230/";
 const linksURL = "https://ganon3.github.io/WDD230/data/links.json";
 
-async function Main(link) { try {                             // this is the main funtion to work with the Json
+async function Main(link) { try { // this is the main funtion to work with the Json
     
-                     const rawData = await fetch(link);       // this is the relm of tests
+                     const rawData = await fetch(link);  
     if(rawData.ok) { const data = await rawData.json();       
         
-    console.table(data); 
-    console.table(data.weeks);
-    console.log(data.weeks|| "hellow")
-    display(data);
+    //console.table(data); 
+    //console.table(data.weeks);
+    //console.log(data.weeks.week2)
+    console.log(data);
+    displayTest(data);
+//    display(data.weeks);
         
 } else {throw Error ("There was a probelm with the links.js")}
 } catch (err) {alert(err)}}
+
+function displayTest (array) {
+    array.forEach(i => {console.log(i)});
+    array.weeks.forEach(i => console.log(i));
+}
 
 
 // funtion display 
 const links1 = document.getElementById("links");
 
-function display (data) { data.weeks.forEach(week => {
+function display (array) { array.forEach(week => {
     
     const li = document.createElement("li");
     const div = document.createElement("div");
