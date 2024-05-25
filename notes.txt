@@ -32,3 +32,6 @@ video on image file types (no BMP)
 
 https://jsonlint.com/
 to validate .Json file
+
+this is the key from https://home.openweathermap.org/api_keys
+7d8f40038117acf74e125c51aa2baf00
