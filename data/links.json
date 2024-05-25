@@ -1,7 +1,7 @@
 {
     "weeks": 
     { 
-        "week-2" : [
+        "week2" : [
             
             {"name": "Week-2"},
             {
@@ -17,8 +17,8 @@
                 "title":"BOM-10"
             }
 
-                   ],
-        "week-3" : [
+                  ],
+        "week3" : [
 
             {"name": "Week-3"},
             {
@@ -34,8 +34,8 @@
                 "title":":foot&var()"
             }
 
-                   ],
-        "week-4" : [
+                  ],
+        "week4" : [
 
             {"name":"Week-4"},
             {
@@ -46,8 +46,8 @@
                 "url":"https://codepen.io/Ganon3/pen/MWdepqo?editors=1100",
                 "title":"Pseudo-El"
             }
-                   ],
-        "week-5" : [
+                  ],
+        "week5" : [
 
             {"name": "Week-5"},
             {
