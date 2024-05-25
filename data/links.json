@@ -1,0 +1,67 @@
+{
+    "weeks": 
+    { 
+        "week-2" : [
+            
+            {"name": "Week-2"},
+            {
+                "url":"https://ganon3.github.io/WDD230/week02/design.html", 
+                "title":"Designs"
+            },
+            {
+                "url":"https://codepen.io/Ganon3/pen/zYXVoeQ", 
+                "title":"Menu"
+            },            
+            {
+                "url":"https://ganon3.github.io/WDD230/week02/bom.html", 
+                "title":"BOM-10"
+            }
+
+                   ],
+        "week-3" : [
+
+            {"name": "Week-3"},
+            {
+                "url":"https://ganon3.github.io/WDD230/week03/lazyload.html",
+                "title":"Lazy"
+            },
+            {
+                "url":"https://ganon3.github.io/WDD230/week03/bom.html",
+                "title":"LocalStorage"
+            },
+            {
+                "url":"https://codepen.io/Ganon3/pen/MWdaBQJ",
+                "title":":foot&var()"
+            }
+
+                   ],
+        "week-4" : [
+
+            {"name":"Week-4"},
+            {
+                "url":"https://ganon3.github.io/WDD230/week04/tablebuild.html",
+                "title":"Table"
+            },
+            {
+                "url":"https://codepen.io/Ganon3/pen/MWdepqo?editors=1100",
+                "title":"Pseudo-El"
+            }
+                   ],
+        "week-5" : [
+
+            {"name": "Week-5"},
+            {
+                "url":"https://ganon3.github.io/WDD230/week05/new-ward-members.json",
+                "title":"Json"
+            },
+            {
+                "url":"https://ganon3.github.io/WDD230/week05/prophets.html",
+                "title":"Prophets"
+            },
+            {
+                "url":"https://ganon3.github.io/WDD230/week05/weather.html",
+                "title":"API"
+            }
+                   ]
+    }
+}
