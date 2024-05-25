@@ -8,7 +8,7 @@ async function Main(link) { try {                             // this is the mai
         
     console.table(data); 
     console.table(data.weeks);
-    console.log(data.weeks || "hellow")
+    console.log(data.weeks|| "hellow")
     display(data);
         
 } else {throw Error ("There was a probelm with the links.js")}
