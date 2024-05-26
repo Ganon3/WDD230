@@ -49,7 +49,7 @@ header span p {
     background-color: blanchedalmond;
 }
 
-#indexMain h2 {
+#indexMian h2 {
     text-align: center;
 }
 
@@ -89,6 +89,10 @@ section li:hover {
 #linknav:hover {
     border: 2px solid black;
     background-color: rgb(249, 177, 89);
+}
+
+#linksAct a:hover {
+    color: rgb(169, 35, 14);
 }
 
 .link.men {

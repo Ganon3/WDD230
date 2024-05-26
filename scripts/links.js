@@ -25,7 +25,7 @@ function displayTest (array) {
 
 // funtion display
 // display ---------
-const links1 = document.getElementById("links");
+const links1 = document.getElementById("linksAct");
 
 function display (array) { array.forEach(week => {
     
