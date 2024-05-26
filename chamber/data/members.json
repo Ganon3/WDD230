@@ -1,0 +1,62 @@
+{
+    "discription": "This file is a json for the members of the Galveston County Chamberssight",
+    "members": [
+                 {
+                    "name":"Aleksi Jaroslava",
+                    "addresse":"2775 Hamilton Drive Hitchcock, Texas(TX), 77563",
+                    "phoneNumbers":"409-925-4998",
+                    "websightURL":"http://example.com/apparatus/board",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Taran Aldara",
+                    "addresse":"3879 Hamilton Drive Hitchcock, Texas(TX), 77563",
+                    "phoneNumbers":"409-316-0315",
+                    "websightURL":"https://example.com/ants/beginner",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Rhiannon Simona Riku",
+                    "addresse":"2153 Newton Street HITCHCOCK, Texas(TX), 77563",
+                    "phoneNumbers":"989-315-5224",
+                    "websightURL":"https://www.example.com/bike/addition.php",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Patrícia Lavr",
+                    "addresse":"3307 Burwell Heights Road Texas City, Texas(TX), 77591",
+                    "phoneNumbers":"409-925-3800",
+                    "websightURL":"http://www.example.net/birth?boat=behavior",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Terézia Peredur",
+                    "addresse":"2977 Lynn Ogden Lane Texas City, Texas(TX), 77592",
+                    "phoneNumbers":"843-747-0720",
+                    "websightURL":"https://www.example.com/?aftermath=beds&apparel=bag",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Ameliya Fergus",
+                    "addresse":"3574 Lynn Ogden Lane Texas City, Texas(TX), 77591",
+                    "phoneNumbers":"409-927-5333",
+                    "websightURL":"https://example.com/",
+                    "icon":"",
+                    "subscription":""
+                 },
+                 {
+                    "name":"Lari Ivo",
+                    "addresse":"2633 Brookview Drive Santa Fe, Texas(TX), 77510",
+                    "phoneNumbers":"817-507-0978",
+                    "websightURL":"https://airport.example.com/",
+                    "icon":"",
+                    "subscription":""
+                 }
+               ]
+    
+}
