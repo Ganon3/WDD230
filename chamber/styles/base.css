@@ -279,3 +279,12 @@ table tbody {
 table tbody tr td:nth-child(1) {background-color: var(--second-col) !important;}
 table tbody tr:nth-child(odd)  {background-color: var(--second-sup-col) !important;}
 
+/*--------- driectory main -------------------------------------*/
+
+#discMain {
+    border: 5px solid var(--style2-col);
+    background-color: var(--second-sup-col);
+}
+#discButtonts {
+    display: flex;
+    text-align: center;

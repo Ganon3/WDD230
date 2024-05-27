@@ -1,6 +1,11 @@
 const url = "https://ganon3.github.io/WDD230/chamber/data/members.json";
 const div = document.getElementById("memberCards");
 
+const buttonFull = document.getElementById('buttA');
+const buttonLittle = document.getElementById('buttB');
+
+    // let a = displaySymbole; if the symble is A do ths Display(array,symbole){}
+
 async function Main (url) { try {
 
     const rawData = await fetch(url);
@@ -9,11 +14,12 @@ async function Main (url) { try {
     else if (rawData.ok) {
 
     const data = await rawData.json();
+
     //displayTest(data.members);
     //displayFull(data.members);
-    displayLittle(data.members);
+    //displayLittle(data.members);
 
-
+    
     }
 } catch(err) {alert(err)}}
 
@@ -83,5 +89,17 @@ function displayLittle(array) {
     })
 }
 
+
 // to activate
-Main(url);
+buttonFull.addEventListener("click", displayFull(data.members));
+buttonLittle.addEventListener('click', displayLittle(data.members));
+
+async function Main(symble) {
+const data = await DATA(url);
+
+if(symble == "f") {displayFull(data.members);}
+else if (symble == "l") {displayLittle(data.members);}
+}
+
+buttonFull.addEventListener("click", Main("f"));
+buttonLittle.addEventListener('click', Main("l"));
