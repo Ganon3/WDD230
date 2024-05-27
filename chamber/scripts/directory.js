@@ -54,6 +54,28 @@ function displayFull (array) {
 
         divCard.appendChild(section);
     })
+}
+
+function displayLittle(array) {
+
+    const section = document.createElement("section");
+    const name = document.createElement('h2');
+    const addres = document.createElement("p");
+    const phone = document.createElement("p");
+    const a = document.createElement("a");
+
+    name.innerText = memb.name;
+    addres.innerText = memb.addresse;
+    phone.innerText = memb.phoneNumbers;
+    a.href = memb.websightURL;
+    a.innerText = memb.websightURL;
+
+    section.appendChild(name);
+    section.appendChild(addres);
+    section.appendChild(phone);
+    section.appendChild(a);
+
+    divCard.appendChild(section);
 
 }
 
