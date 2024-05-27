@@ -1,12 +1,7 @@
 const url = "https://ganon3.github.io/WDD230/chamber/data/members.json";
 const div = document.getElementById("memberCards");
 
-const buttonFull = document.getElementById('buttA');
-const buttonLittle = document.getElementById('buttB');
-
-    // let a = displaySymbole; if the symble is A do ths Display(array,symbole){}
-
-async function Main (url) { try {
+async function DATA (url) { try {
 
     const rawData = await fetch(url);
 
@@ -19,6 +14,7 @@ async function Main (url) { try {
     //displayFull(data.members);
     //displayLittle(data.members);
 
+    return data;
     
     }
 } catch(err) {alert(err)}}
@@ -38,7 +34,8 @@ function displayTest (array) {
 const divCard = document.getElementById("memberCards");
 
 function displayFull (array) {
-
+    
+    divCard.innerHTML = "";
     array.forEach(memb => {
 
         const section = document.createElement("section");
@@ -65,7 +62,7 @@ function displayFull (array) {
 
 function displayLittle(array) {
 
-
+    divCard.innerHTML = "";
     array.forEach(memb =>{
 
         const section = document.createElement("section");
@@ -91,8 +88,6 @@ function displayLittle(array) {
 
 
 // to activate
-buttonFull.addEventListener("click", displayFull(data.members));
-buttonLittle.addEventListener('click', displayLittle(data.members));
 
 async function Main(symble) {
 const data = await DATA(url);
@@ -101,5 +96,8 @@ if(symble == "f") {displayFull(data.members);}
 else if (symble == "l") {displayLittle(data.members);}
 }
 
-buttonFull.addEventListener("click", Main("f"));
-buttonLittle.addEventListener('click', Main("l"));
+const buttonFull = document.getElementById('buttA');
+const buttonLittle = document.getElementById('buttB');
+
+// buttonFull.addEventListener("click", Main("f"));
+// buttonLittle.addEventListener('click', Main("l"));

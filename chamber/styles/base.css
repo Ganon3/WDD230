@@ -283,8 +283,42 @@ table tbody tr:nth-child(odd)  {background-color: var(--second-sup-col) !importa
 
 #discMain {
     border: 5px solid var(--style2-col);
-    background-color: var(--second-sup-col);
 }
-#discButtonts {
+#discButtons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border-bottom: 3px solid var(--prime-sup-col);
+    font-size: 44px;
+    background-color: var(--prime-sup-col);
+}
+#discButtons button {
+    background-color: var(--second-col);
+    border: 7px solid var(--style2-col);
+    margin: 2px 20px;
+}
+#discButtons button:hover {
+    color: var(--style1-col);
+    padding: 4px;
+}
+
+
+#discMain section {
+    margin: 3em;
     text-align: center;
+    overflow: auto;
+}
+#discMain section:nth-child(even) {
+    border: 5px solid var(--style1-col) !important;
+}
+#discMain section:nth-child(odd) {
+border: 5px solid var(--style2-col);
+}
+#discMain img {
+    float: left;
+    width: 160px;
+}
+
+#discMain a {font-size: 22px;}
+#discMain a:hover {font-size: 27px;}
