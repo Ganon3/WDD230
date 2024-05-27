@@ -33,12 +33,13 @@ h1, h2, h3, h4 {font-family: "Sacramento";}
     min-width: 470px;
     margin: 5px;
     margin: 0 auto;
+    background-color: var(--prime-col);
 }
 li::marker {
     content: "";
 }
 #active::before {
-    content: "<=> ";
+    content: "➕ ";
 }
 
 /* ---------above is genral css--------- */
@@ -117,6 +118,7 @@ footer {
     border-radius: 5px;
     padding: 4px;
     background-color: var(--style1-col);
+    color: var(--prime-col);
 }                               
                                        
 /*---------above is the all that is in the footer--------*/
