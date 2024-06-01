@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-:root {
-    --prime-col: #f7e6df;       /*   var(--prime-col)        */
-    --prime-sup-col:#4f2f35;    /*   var(--prime-sup-col)    */
-    --second-col: #d0af88;      /*   var(--second-col)       */
-    --second-sup-col: #b2957e;  /*   var(--second-sup-col)   */
-    --style1-col: #8b1d19;      /*   var(--style1-col)       */
-    --style2-col: #11111d;      /*   var(--style2-col)       */
-}
-
 .sacramento-regular {
     font-family: "Sacramento", cursive;
     font-weight: 400;
@@ -21,24 +12,42 @@
     font-style: italic;
 }
 
+/*-- fonts are above ------------------------------------------*/
 
-* {font-family: "Zilla Slab";}
-h1, h2, h3, h4 {font-family: "Sacramento";}
+:root {
+    --prime-col: #f7e6df;       /*   var(--prime-col)        */
+    --prime-sup-col:#4f2f35;    /*   var(--prime-sup-col)    */
+    --second-col: #d0af88;      /*   var(--second-col)       */
+    --second-sup-col: #b2957e;  /*   var(--second-sup-col)   */
+    --style1-col: #8b1d19;      /*   var(--style1-col)       */
+    --style2-col: #11111d;      /*   var(--style2-col)       */
+
+    font-size: 16px;
+    --font-zilla: "Zilla Slab";   /*   var(--font-zilla)       */
+    --font-sacra: "Sacramento";   /*   var(--font-sacra)       */
+}
+
 * {
+    font-family: var(--font-zilla);
+
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
+
+h1, h2, h3, h4 {font-family: var(--font-sacra);}
+
 #content {
     min-width: 470px;
     margin: 5px;
     margin: 0 auto;
     background-color: var(--prime-col);
 }
+
 li::marker {
     content: "";
 }
-#active::before {
+.active::before {
     content: "➕ ";
 }
 
