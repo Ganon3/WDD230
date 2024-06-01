@@ -19,10 +19,10 @@
    /* ---------above is grid area change --------- */
    /* -------------------------------------------- */
 
-    #setings {             /*button's positioning*/
+    #setings {             
                
-        padding: 0 10px;      bottom: 20rem;
-        font-size: 4em;       left: 2rem;
+        padding: 0 25px;     
+        font-size: 2em;       
        
         background-color: #11111df9;
         color: #f7e6df;
@@ -31,15 +31,11 @@
     /*This is the button's effects : TOGGLE  ---  Hamberger*/      
    
     #navigation.seting {grid-column: 3/5;}        /*.seting*/
-    #setings.seting {
-        font-size: 4em;
-        bottom: 20rem;     /*button's positioning*/
-        left: 19rem;       /*button's positioning*/
-    }
+    #setings.seting    {font-size: 2em;}
 
     /*---------above is the all that is in the header--------*/
     /*-------------------------------------------------------*/
-
+    /*not organized yet*/
 
     #discoverMain { 
         display: grid;

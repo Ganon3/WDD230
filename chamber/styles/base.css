@@ -22,7 +22,7 @@
     --style1-col: #8b1d19;      /*   var(--style1-col)       */
     --style2-col: #11111d;      /*   var(--style2-col)       */
 
-    font-size: 16px;
+               font-size: 16px;
     --font-zilla: "Zilla Slab";   /*   var(--font-zilla)       */
     --font-sacra: "Sacramento";   /*   var(--font-sacra)       */
 }
@@ -48,7 +48,7 @@ li::marker {
     content: "";
 }
 .active::before {
-    content: "➕ ";
+    content: "➕";
 }
 
 /* ---------above is genral css--------- */
@@ -81,19 +81,21 @@ header div h1 {
     text-align: center;                                  /*navigation*/
     align-content: center;                               /*navigation*/
     border: solid;
-    font-size: 1.7rem;                                   
-}
+    font-size: 1.7rem;
+         
+}                             
+#navigation li                      {clear: both; position: relative; top: -50px;}
 #navigation li                      {margin: 2% 0px;}
 #navigation li:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: var(--prime-col);}
 #navigation li:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: var(--prime-col);}
 
 
 #setings {            /*#the button's position*/       /*the button or Hamberger*/
-    padding: 0 10px;     position: absolute;
-    font-size: 2.5em;    bottom: 14.5rem;
-    cursor: pointer;     left: 1rem;
-   
-    background-color: #11111df9;
+    padding: 0 10px;     float: left;
+    font-size: 1em;      margin: 10px;
+    cursor: pointer;     z-index: 2;
+
+    background-color: var(--style2-col);
     color: var(--prime-col);
 }
 #setings:hover {background-color: var(--prime-sup-col);}          /*the button or Hamberger*/
@@ -115,8 +117,8 @@ header div h1 {
 #buttons {display: none;}                      /*.seting */
               
 #buttons.seting      {display: grid;}
-#setings.seting      {bottom: 14rem; /*BP*/ left: 10rem;} 
-#navigation.seting   {grid-column: 2/3;}
+#setings.seting      {margin-top: -53px; /*BP*/ } 
+#navigation.seting   {grid-column: 2/3;  /*AP*/ top: -30px;}
 header div h1.seting {margin-top: 0;}
 
 /*---------above is the all that is in the header--------*/

@@ -7,13 +7,12 @@ const navi = document.getElementById("navigation");
 
 setbutton.addEventListener('click', ()=> {
 
-    if (setbutton.textContent == "<=") {setbutton.textContent = "≡";}
-    else {setbutton.textContent = "<=";}
+    if (setbutton.textContent == "X") {setbutton.textContent = "≡";}
+    else {setbutton.textContent = "X";}
 
     setbutton.classList.toggle('seting');
     navi.classList.toggle('seting');
-    buttons.classList.toggle('seting');
-
+    buttons.classList.toggle('seting'); 
 })
 
 // up top is footer stuff and hamberger menue button
