@@ -30,3 +30,18 @@ for today weather      https://api.openweathermap.org/data/2.5/weather?lat=29.30
 The plan is to do the simpel things first : current temp and description EZ
 then dig through teh forcast grab the min and max for the days and show them.
 */
+
+const weather = "https://api.openweathermap.org/data/2.5/weather?lat=29.30&lon=-94.80&units=imperial&appid=7d8f40038117acf74e125c51aa2baf00";
+const forcast = "https://api.openweathermap.org/data/2.5/forecast?lat=29.30&lon=-94.80&units=imperial&cnt=23&appid=7d8f40038117acf74e125c51aa2baf00";
+
+async function getJson (url) { try {
+
+    const rawData = await fetch(url);
+    if (rawData.ok) 
+    {
+    const data = await rawData.json();
+    return data; 
+    }
+    
+else {throw Error ("There is a probelm with the url")} 
+} catch(err) {alert(err)}}
