@@ -32,7 +32,7 @@ then dig through teh forcast grab the min and max for the days and show them.
 */
 
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=29.30&lon=-94.80&units=imperial&appid=7d8f40038117acf74e125c51aa2baf00";
-const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=29.30&lon=-94.80&units=imperial&cnt=23&appid=7d8f40038117acf74e125c51aa2baf00";
+const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=29.30&lon=-94.80&units=imperial&cnt=26&appid=7d8f40038117acf74e125c51aa2baf00";
 
 async function getJson (url) { try {
 
@@ -40,7 +40,7 @@ async function getJson (url) { try {
     if (rawData.ok) 
     {
     const data = await rawData.json();
-    console.table(data);
+    // console.table(data);
     return data; 
     }
     
@@ -60,9 +60,60 @@ const section = document.getElementById("homeMainWF");
 
 function displayWeather(json) {
 
-    
+    const div = document.createElement("div");
+    const img = document.createElement("img");
+    const p = document.createElement("p");
+
+    img.src = `https://openweathermap.org/img/wn/${json.weather[0].icon}.png`;
+    img.alt = 'an expreshon of the weather';
+    p.innerText = `${json.weather[0].main} or ${json.weather[0].description} is how it is right now in Galveston. Tempitures are looking to be around ${json.main.temp_min} to ${json.main.temp_max} degres in feranhight`;
+
+    div.appendChild(img);
+    div.appendChild(p);
+    section.appendChild(div);
 }
-function displayForcast(json) {}
+
+function displayForcast(json) {
+
+    let today = new Date().getTime();
+    let day1 = {"temps":[], "day":`${new Date((today+(86400000*1)))}`};
+    let day2 = {"temps":[], "day":`${new Date((today+(86400000*2)))}`};
+    let day3 = {"temps":[], "day":`${new Date((today+(86400000*3)))}`};
+
+    json.list.forEach(i => {
+        if ((today+(86400000*3)) <= new Date(i.dt_txt).getTime()) {day3.temps.push(Number(i.main.temp))}
+        else if ((today+(86400000*2)) <= new Date(i.dt_txt).getTime()) {day2.temps.push(Number(i.main.temp))}
+        else if ((today+(86400000*1)) <= new Date(i.dt_txt).getTime()) {day1.temps.push(Number(i.main.temp))}
+    });
+    
+    day1.temps = largeSmall(day1.temps);
+    day2.temps = largeSmall(day2.temps);
+    day3.temps = largeSmall(day3.temps);
+
+    const div = document.createElement("div");
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const p3 = document.createElement("p");
+
+    p1.innerHTML = `On day ${day1.day} the tempitures will raneg from ${day1.temps[0]} to ${day1.temps[1]} degreas`;
+    p2.innerHTML = `On day ${day2.day} the tempitures will raneg from ${day2.temps[0]} to ${day2.temps[1]} degreas`;
+    p3.innerHTML = `On day ${day3.day} the tempitures will raneg from ${day3.temps[0]} to ${day3.temps[1]} degreas`;
+
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    section.appendChild(div);
+}
+
+function largeSmall(array) {
+
+    array.sort((a, b) => {return a - b});
+
+    SML = array[0];
+    BIG = array[array.length - 1];
+    
+    return [SML,BIG];
+}
 
 
 async function Main() {
