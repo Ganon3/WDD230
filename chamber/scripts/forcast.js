@@ -31,8 +31,8 @@ The plan is to do the simpel things first : current temp and description EZ
 then dig through teh forcast grab the min and max for the days and show them.
 */
 
-const weather = "https://api.openweathermap.org/data/2.5/weather?lat=29.30&lon=-94.80&units=imperial&appid=7d8f40038117acf74e125c51aa2baf00";
-const forcast = "https://api.openweathermap.org/data/2.5/forecast?lat=29.30&lon=-94.80&units=imperial&cnt=23&appid=7d8f40038117acf74e125c51aa2baf00";
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=29.30&lon=-94.80&units=imperial&appid=7d8f40038117acf74e125c51aa2baf00";
+const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=29.30&lon=-94.80&units=imperial&cnt=23&appid=7d8f40038117acf74e125c51aa2baf00";
 
 async function getJson (url) { try {
 
@@ -40,6 +40,7 @@ async function getJson (url) { try {
     if (rawData.ok) 
     {
     const data = await rawData.json();
+    console.table(data);
     return data; 
     }
     
@@ -53,3 +54,25 @@ function displayTest (array) {
     array.forEach(i => console.log("hi"));
 
 }
+/// dispalayer 
+
+const section = document.getElementById("homeMainWF");
+
+function displayWeather(json) {
+
+    
+}
+function displayForcast(json) {}
+
+
+async function Main() {
+
+    const weather = await getJson(weatherURL);
+    const forcast = await getJson(forcastURL);
+    
+    displayWeather(weather);
+    displayForcast(forcast);
+}
+
+Main();
+// to start thinsg
