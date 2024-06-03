@@ -51,6 +51,5 @@ function displayTest (array) {
     console.table(array);
     array.forEach(i => console.log(i));
     array.forEach(i => console.log("hi"));
-    array.forEach(i => console.log(i.name));
 
 }
