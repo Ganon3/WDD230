@@ -154,7 +154,7 @@ footer {
 }
 #homeMain section p {margin: 20px;}
 #homeMain .homeflex {
-    
+
     display: flex;
     background-color: var(--second-sup-col);
     border-radius: 19px 19px 0 0px;

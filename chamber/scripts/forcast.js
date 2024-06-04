@@ -69,7 +69,7 @@ function displayWeather(json) {
 
     img.src = `https://openweathermap.org/img/wn/${json.weather[0].icon}.png`;
     img.alt = 'an expreshon of the weather';
-    p.innerText = `${json.weather[0].main} or ${json.weather[0].description} is how it is right now in Galveston. Tempitures are looking to be around ${json.main.temp_min} to ${json.main.temp_max} degres in feranhight`;
+    p.innerText = `${json.weather[0].main} or ${json.weather[0].description} is how it is right now in Galveston county. Tempitures are looking to be around ${json.main.temp_min} to ${json.main.temp_max} degres in feranhight`;
 
     div.appendChild(img);
     div.appendChild(p);
@@ -119,6 +119,18 @@ function largeSmall(array) {
     BIG = array[array.length - 1];
     
     return [SML,BIG];
+}
+
+function dateStringFix(date) { // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tostring
+
+    const d = date;
+    let text = d.toString();
+
+    text = text.split("");
+    text = text.slice(0,11);
+    text[0] = text[0].toLowerCase();
+    text = text.join("");
+    return text;
 }
 
 // to start thinsg
