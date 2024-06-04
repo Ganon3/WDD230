@@ -40,7 +40,8 @@ async function getJson (url) { try {
     if (rawData.ok) 
     {
     const data = await rawData.json();
-    // console.table(data);
+    // console.table(data.weather);
+    // comsole.table(data.list);
     return data; 
     }
     
@@ -51,9 +52,11 @@ function displayTest (array) {
 
     console.table(array);
     array.forEach(i => console.log(i));
-    array.forEach(i => console.log("hi"));
+    array.forEach(i => console.log("count"));
 
 }
+
+/// up is start
 /// dispalayer 
 
 const section = document.getElementById("homeMainWF");
@@ -70,9 +73,9 @@ function displayWeather(json) {
 
     div.appendChild(img);
     div.appendChild(p);
+    div.setAttribute("class","homeflex");
     section.appendChild(div);
 }
-
 function displayForcast(json) {
 
     let today = new Date().getTime();
@@ -95,15 +98,18 @@ function displayForcast(json) {
     const p2 = document.createElement("p");
     const p3 = document.createElement("p");
 
-    p1.innerHTML = `On day ${day1.day} the tempitures will raneg from ${day1.temps[0]} to ${day1.temps[1]} degreas`;
-    p2.innerHTML = `On day ${day2.day} the tempitures will raneg from ${day2.temps[0]} to ${day2.temps[1]} degreas`;
-    p3.innerHTML = `On day ${day3.day} the tempitures will raneg from ${day3.temps[0]} to ${day3.temps[1]} degreas`;
+    p1.innerHTML = `On ${dateStringFix(day1.day)} the tempitures will raneg from ${day1.temps[0]} to ${day1.temps[1]} degreas`;
+    p2.innerHTML = `On ${dateStringFix(day2.day)} the tempitures will raneg from ${day2.temps[0]} to ${day2.temps[1]} degreas`;
+    p3.innerHTML = `On ${dateStringFix(day3.day)} the tempitures will raneg from ${day3.temps[0]} to ${day3.temps[1]} degreas`;
 
     div.appendChild(p1);
     div.appendChild(p2);
     div.appendChild(p3);
     section.appendChild(div);
 }
+
+// small funtions bellow
+// small funtions bellow
 
 function largeSmall(array) {
 
@@ -115,7 +121,7 @@ function largeSmall(array) {
     return [SML,BIG];
 }
 
-
+// to start thinsg
 async function Main() {
 
     const weather = await getJson(weatherURL);
@@ -126,4 +132,3 @@ async function Main() {
 }
 
 Main();
-// to start thinsg

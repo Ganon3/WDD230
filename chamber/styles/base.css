@@ -53,9 +53,8 @@ li::marker {
 
 /* ---------above is genral css--------- */
 /* ------------------------------------- */
-
-header div {position: relative;}                         /*header*/ 
-header div {display: grid;
+            
+header div {display: grid;                                /*header*/
             grid-template-columns: auto 1fr;          
             align-content: center;
             justify-content: center;
@@ -74,7 +73,6 @@ header div h1 {
     background-color: var(--second-sup-col);
     border: 3px solid var(--style2-col);                           /*header*/ 
 }
-
 
 #navigation {                                            
     grid-column: 1/3;
@@ -137,14 +135,31 @@ footer {
 
 /* -- home main section ---------------------------------------------*/
 
-#homeMain         {margin: 20px;}
-#homeMain h1      {text-align: center;}
+#homeMain    {margin: 20px;}
+#homeMain h1 {
+
+    text-align: center;
+    margin-top: -9px;
+    margin-bottom: -1px;
+    
+    background-color: var(--second-col);
+    
+    border: 5px #11111d solid;
+    border-radius: 20px;
+}
 #homeMain section {text-align: center;
 
     border: var(--style2-col) solid;
     border-radius: 20px;
 }
 #homeMain section p {margin: 20px;}
+#homeMain .homeflex {
+    
+    display: flex;
+    background-color: var(--second-sup-col);
+    border-radius: 19px 19px 0 0px;
+}
+#homeMain .homeflex img {width: 100%; max-width: 150px;}
 
 /*-- Discover main section --------------------------------------------*/
 
