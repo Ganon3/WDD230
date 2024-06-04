@@ -115,7 +115,7 @@ header div h1 {
 #buttons {display: none;}                      /*.seting */
               
 #buttons.seting      {display: grid;}
-#setings.seting      {margin-top: -53px; /*BP*/ } 
+#setings.seting      {margin-top: 10px; /*BP*/ } 
 #navigation.seting   {grid-column: 2/3;  /*AP*/ top: -30px;}
 header div h1.seting {margin-top: 0;}
 

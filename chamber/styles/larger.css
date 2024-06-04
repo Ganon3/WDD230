@@ -31,7 +31,7 @@
     /*This is the button's effects : TOGGLE  ---  Hamberger*/      
    
     #navigation.seting {grid-column: 3/5;}        /*.seting*/
-    #setings.seting    {font-size: 2em;}
+    #setings.seting    {font-size: 2em; margin-top: -70px;}
 
     /*---------above is the all that is in the header--------*/
     /*-------------------------------------------------------*/
