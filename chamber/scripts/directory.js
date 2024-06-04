@@ -1,4 +1,4 @@
-const url = "https://ganon3.github.io/WDD230/chamber/data/members.json";
+const url = "https://ganon3.github.io/wdd230/chamber/data/members.json";
 const div = document.getElementById("memberCards");
 
 async function DATA (url) { try {
