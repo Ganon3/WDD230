@@ -82,7 +82,7 @@ header div h1 {
     font-size: 1.7rem;
          
 }                             
-#navigation li                      {clear: both; position: relative; top: -50px;}
+#navigation li                      {clear: both; position: relative; top: -20px;}
 #navigation li                      {margin: 2% 0px;}
 #navigation li:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: var(--prime-col);}
 #navigation li:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: var(--prime-col);}
