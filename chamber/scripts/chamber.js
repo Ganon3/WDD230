@@ -18,32 +18,39 @@ setbutton.addEventListener('click', ()=> {
 // up top is footer stuff and hamberger menue button
 // -------------------------------------------------
 
-function setDate() {localStorage.setItem('dateLastVisited', new Date());}
-function getDate() {return localStorage.getItem('dateLastVisited');}
+function setDate(verryFirst) {localStorage.setItem('veryFirst', verryFirst);}
+function getDate() {return localStorage.getItem('veryFirst');}
 
-function setFirst(first) {localStorage.setItem('first', first);}
-function getFirst() {return localStorage.getItem('first');}
+let verryFirst = getDate() || new Date(); // this is the date of the very first time the user hase visteted
+setDate(verryFirst);                      // you will never need this again
 
-let first = getFirst() || new Date();
-const lastViset = getDate();           // 86400000 is 1 day in ms
+function setLast(lastVisited) {localStorage.setItem('LastViseted', lastVisited);}
+function getLast() {return localStorage.getItem('LastViseted');}
 
-if ((Date.now() - new Date(first)) < 86400000) { document.getElementById('great').textContent = "Welcome! Let us know if you have any questions."}
-else if ((Date.now() - new Date(lastViset)) < 86400000) {document.getElementById('great').textContent = "Back so soon! Awesome!"}
-else if ((Date.now() - new Date(lastViset)) >= 86400000) {
+let lastV = getLast();       // this is the last viset
+let nowV = new Date();       // user is vistening now
+setLast(nowV);               // set last viset to now
 
-    let msOfdays = Date.now() - new Date(lastViset);
+const greating = document.getElementById('great');
+if ((new Date(nowV) - new Date(verryFirst)) < 86400000)     { greating.textContent = "Welcome! Let us know if you have any questions."}
+else if ((new Date(nowV) - new Date(lastV)) < 86400000) { greating.textContent = "Back so soon! Awesome!"}
+else if ((new Date(nowV) - new Date(lastV)) >= 86400000) {
+
+    let msOfdays = new Date(nowV) - new Date(lastV);
     let days = Math.floor(msOfdays / 86400000);
 
-    if (days == 1) {document.getElementById('great').textContent = `You last visited ${days} day ago.`}
-    else {document.getElementById('great').textContent =`You last visited ${days} days ago.`}
-    
+    if (days == 1) {greating.textContent = `You last visited ${days} day ago.`}
+    else {greating.textContent =`You last visited ${days} days ago.`}
 }
 
-setFirst(first);
-setDate();        // const set = setTimeout(setDate(), 5000);
 
-//console.log(Date.now() - new Date('05/13/2024'));  tests
-//console.log(new Date() / 31536000000)
-//console.log(Date.now() - new Date(lastViset))
+        
+/*
+const set = setTimeout(setDate(verryFirst), 5000);
+console.log(set);
+console.log(Date.now() - new Date('05/13/2024'));  //tests
+console.log(new Date() / 31536000000)
+console.log(Date.now() - new Date(lastViset))
+*/
 
 
