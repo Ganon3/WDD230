@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     
     #content  {max-width: 1250px;}
     p         {font-size: 2rem;}
@@ -75,5 +75,12 @@
     #upComing {
         grid-column: 1/2;
         grid-row: 3/4;
+    }
+
+    /* directory below ------- */
+
+    #memberCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
