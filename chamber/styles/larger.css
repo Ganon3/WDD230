@@ -70,7 +70,6 @@
         width: 100%;
         height: auto;
         border: none;
-        background-color: none;
     }
     #upComing {
         grid-column: 1/2;
