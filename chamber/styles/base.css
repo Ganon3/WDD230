@@ -80,12 +80,13 @@ header div h1 {
     align-content: center;                               /*navigation*/
     border: solid;
     font-size: 1.7rem;
-         
-}                             
-#navigation li                      {clear: both; position: relative; top: -20px;}
-#navigation li                      {margin: 2% 0px;}
-#navigation li:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: var(--prime-col);}
-#navigation li:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: var(--prime-col);}
+}            
+
+#navigation a                      {display: block;}
+#navigation a                      {clear: both; position: relative; top: -30px;}
+#navigation a                      {margin: 2% 0px;}
+#navigation a:hover:nth-child(odd) {background-color: #8b1d19df; /**/ color: var(--prime-col);}
+#navigation a:hover:nth-child(even){background-color: #1a1a2edf; /**/ color: var(--prime-col);}
 
 
 #setings {            /*#the button's position*/       /*the button or Hamberger*/
@@ -136,7 +137,7 @@ footer {
 /* -- home main section ---------------------------------------------*/
 
 #homeMain    {margin: 20px;}
-#homeMain h1 {
+#homeMain h2 {
 
     text-align: center;
     margin-top: -9px;
@@ -172,7 +173,7 @@ footer {
     text-align: center;
 }
 #discoverMain p  {padding: 20px 0;}
-#discoverMain h1 { margin: 0;
+#discoverMain h2 { margin: 0;
     
     background-color:var(--second-sup-col);
 }
